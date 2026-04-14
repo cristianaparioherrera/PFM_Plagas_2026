@@ -1,0 +1,108 @@
+/* contenedor general */
+.widget-container {
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* tarjeta azul */
+.card {
+  background: #234272;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: white;
+}
+
+/* título */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* texto */
+.label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* input */
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+/* contenedor botones */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* botón principal */
+.btn-primary {
+  flex: 1;
+  background: #1b3558;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* hover botón */
+.btn-primary:hover {
+  background: #162a45;
+}
+
+/* botón limpiar */
+.btn-danger {
+  flex: 1;
+  background: #CB542A;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #a94420;
+}
+
+/* error */
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+}
+
+/* bloque resultados */
+.results {
+  margin-top: 16px;
+}
+
+/* resumen */
+.summary {
+  background: #1b3558;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* lista */
+.list {
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* cada fila */
+.list-item {
+  padding: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #4da3ff;
+}

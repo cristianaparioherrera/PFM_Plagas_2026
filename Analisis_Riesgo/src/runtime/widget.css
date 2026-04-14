@@ -1,0 +1,71 @@
+.plantilla-mapa {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 1px;
+}
+
+.widget-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.panel {
+  width: 270px;
+  min-width: 270px;
+  background: linear-gradient(180deg, #234272, #1b2f4d);
+  color: white;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  height: calc(100% - 40px);
+  
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.panel-title {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  background: #1b2f4d;
+  color: white;
+  border: 1px solid #ffffff30;
+}
+
+.card {
+  background: #1b2f4d;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.ratas-num {
+  font-size: 32px;
+  color: #CB542A;
+}
+
+.riesgo-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.map-container {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.map-container > div {
+  height: 100% !important;
+}
