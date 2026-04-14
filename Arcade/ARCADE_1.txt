@@ -1,0 +1,55 @@
+Expresión de Arcade para autocompletar el campo Modo de aviso de la capa Avisos Ratas 2025, usando tres opciones previamente definidas en un dominio dentro de la GDB. 
+
+ 
+
+CAMPO: Modo de aviso 
+
+When( 
+
+  Random() < 0.333, "Móvil/Teléfono", 
+
+  Random() < 0.444, "Registro", 
+
+  "Internet" 
+
+) 
+
+ 
+
+ 
+
+Expresión de Arcade para autocompletar el campo Estado de la capa Avisos Ratas 2025, usando tres opciones previamente definidas en un dominio dentro de la GDB. 
+
+ 
+
+CAMPO: Estado 
+
+When( 
+
+  Random() < 0.333, "Avisado", 
+
+  Random() < 0.444, "Finalizado", 
+
+  "En ejecución" 
+
+) 
+
+ 
+
+Expresión de Arcade para autocompletar el campo Descripción de la capa Avisos Ratas 2025, usando tres opciones previamente definidas en un dominio dentro de la GDB. 
+
+ 
+
+When( 
+
+  Random() < 0.333, "Avistamiento de ratas a todas horas saltan de arbol en arbol", 
+
+  Random() < 0.444, "Presencia de ratas en la zona. Indica que salen de una tapa de registro que abrió Canal de Isabel II", 
+
+  Random() < 0.666, "Hay ratas en la via pública y se menten en los jardines de la comunidad. Solicita intervención urgente en via publica.", 
+
+  "Solicita desratizar, han visto muchas por la zona, se están metiendo en los domicilios" 
+
+) 
+
+ 

@@ -1,0 +1,111 @@
+Expresión de Arcade utilizada para enriquecer la visualización del widget de tabla del cuadro de mando de control y seguimiento de avisos. 
+
+var modoIcono = When( 
+
+  $datapoint.MODO == 'Móvil/Teléfono', 'telefono', 
+
+  $datapoint.MODO == 'Internet', 'ordenador', 
+
+  $datapoint.MODO == 'Registro', 'registro', 
+
+  '' 
+
+); 
+
+ 
+
+var colorModo = When( 
+
+  $datapoint.MODO == 'Móvil/Teléfono', '#0000FF', 
+
+  $datapoint.MODO == 'Internet', '#139913ff', 
+
+  $datapoint.MODO == 'Registro', '#FF0000', 
+
+  '#000000' 
+
+); 
+
+ 
+
+var textoModo = '<span style="color: ' + colorModo + ';">' + $datapoint.MODO + '</span>'; 
+
+ 
+
+// Colores ESTADO desde tu tabla 
+
+var colorTextoEstado = When( 
+
+  $datapoint.ESTADO == 'Finalizado', '#030303ff',     // Verde 
+
+  $datapoint.ESTADO == 'Avisado', '#ffffffff',        // Naranja/amarillo 
+
+  $datapoint.ESTADO == 'En ejecución', '#ffffffff',   // Naranja 
+
+  '#000000' 
+
+); 
+
+ 
+
+var colorFondoEstado = When( 
+
+  $datapoint.ESTADO == 'Finalizado', '#51f551ff',     // Verde claro 
+
+  $datapoint.ESTADO == 'Avisado', '#f72205ff',        // Naranja claro 
+
+  $datapoint.ESTADO == 'En ejecución', '#eca009ff',   // Naranja claro 
+
+  '#FFFFFF' 
+
+); 
+
+ 
+
+return { 
+
+  cells: { 
+
+    OBJECTID: { displayText : Text($datapoint.OBJECTID), textAlign: 'left' }, 
+
+    address: { displayText : $datapoint.address, textAlign: 'left' }, 
+
+    FECHA_AVISO: { displayText : Text($datapoint.FECHA_AVISO), textAlign: 'left' }, 
+
+    MODO: { 
+
+      displayText : textoModo, 
+
+      textAlign: 'center', 
+
+      iconName: modoIcono, 
+
+      iconAlign: 'izquierda', 
+
+      iconColor: colorModo 
+
+    }, 
+
+    ESTADO: { 
+
+      displayText : $datapoint.ESTADO, 
+
+      textColor: colorTextoEstado, 
+
+      backgroundColor: colorFondoEstado, 
+
+      textAlign: 'center' 
+
+    }, 
+
+    DESCRIP: { displayText : $datapoint.DESCRIP, textAlign: 'left' } 
+
+  } 
+
+} 
+
+ 
+
+ 
+
+ 

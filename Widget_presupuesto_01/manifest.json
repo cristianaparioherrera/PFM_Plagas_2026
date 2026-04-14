@@ -1,0 +1,19 @@
+{
+  "name": "presupuesto",
+  "label": "Presupuesto por Prioridad",
+  "type": "widget",
+  "version": "1.19.0",
+  "exbVersion": "1.19.0",
+  "author": "Custom",
+  "description": "Selecciona elementos por prioridad hasta alcanzar un presupuesto",
+  "dependency": "jimu-arcgis",
+  "hasSettingPage": true,
+  "properties": {},
+  "supportDataSources": {
+    "useDataSources": true
+  },
+  "defaultSize": {
+    "width": 300,
+    "height": 400
+  }
+}
